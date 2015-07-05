@@ -1,7 +1,7 @@
 #ifndef COSQL_KV_H_
 #define COSQL_KV_H_
 
-#define TABLE_SIZE 101
+#define TABLE_SIZE 100
 
 typedef struct
 {

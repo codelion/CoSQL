@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "cosql_kv.h"
 
@@ -43,15 +44,12 @@ int find(hash_table* tab, char* key) {
 	else return -1;
 }
 
-/*
-Simple function for hashing, for now do not worry about collisions etc.
-*/
 unsigned int hash_func(char* k)
 {
     unsigned int hash = 1;
     char* c;
-	for(c = k; *c; c++)
-        hash = *c+hash*31;
-
+	for(c = k; *c; c++) 
+        hash = *c + hash*31;
+    
     return hash % TABLE_SIZE;
 }

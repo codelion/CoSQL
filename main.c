@@ -6,7 +6,7 @@
 int main()
 {
 	char* names[] = {"joe","smith","barney"};
-	int values[] = {20,12,33,};
+	int values[] = {20,12,33};
 	printf("Adding names in the data store ...\n");
 	hash_table *q;
 	q = init();
