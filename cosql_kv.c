@@ -44,9 +44,9 @@ int find(hash_table* tab, char* key) {
 	else return -1;
 }
 
-unsigned int hash_func(char* k)
+int hash_func(char* k)
 {
-    unsigned int hash = 1;
+    int hash = 1;
     char* c;
 	for(c = k; *c; c++) 
         hash = *c + hash*31;

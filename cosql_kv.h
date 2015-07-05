@@ -21,7 +21,7 @@ void destroy(hash_table *tab);
 int add(hash_table *tab, char *key, int value);
 int find(hash_table *tab, char *key);
 
-unsigned int hash_func(char *key);
+int hash_func(char *key);
 
 #endif
 
